@@ -7,7 +7,7 @@ let package = Package(
     name: "AccessCheckoutSDK",
     platforms: [
         // Add support for all platforms starting from a specific version.
-        .macOS(.v11),
+        .macOS(.v10_15),
         .iOS(.v11),
         // .watchOS(.v5),
         // .tvOS(.v11)
