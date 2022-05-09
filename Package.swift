@@ -16,6 +16,6 @@ let package = Package(
         .library(name: "AccessCheckoutSDK", targets: ["AccessCheckoutSDK"])
     ],
     targets: [
-        .target(name: "AccessCheckoutSDK", dependencies: [], path: "AccessCheckoutSDK/")
+        .target(name: "AccessCheckoutSDK", dependencies: [], path: "AccessCheckoutSDK/AccessCheckoutSDK")
     ]
 )
