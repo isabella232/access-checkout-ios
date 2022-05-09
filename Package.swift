@@ -13,9 +13,9 @@ let package = Package(
         // .tvOS(.v11)
     ],
     products: [
-        .library(name: "AccessCheckoutSDK", targets: ["AccessCheckoutSDK"], path: "AccessCheckoutSDK")
+        .library(name: "AccessCheckoutSDK", targets: ["AccessCheckoutSDK"])
     ],
     targets: [
-        .target(name: "AccessCheckoutSDK", dependencies: [])
+        .target(name: "AccessCheckoutSDK", dependencies: [], path: "AccessCheckoutSDK")
     ]
 )
