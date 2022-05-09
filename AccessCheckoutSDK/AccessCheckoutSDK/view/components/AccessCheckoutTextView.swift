@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 /// A view representing a text field
 protocol AccessCheckoutTextView {
