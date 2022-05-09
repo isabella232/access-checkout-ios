@@ -1,3 +1,5 @@
+import Foundation
+
 struct CardBrandImageModel {
     let type: String
     let url: String

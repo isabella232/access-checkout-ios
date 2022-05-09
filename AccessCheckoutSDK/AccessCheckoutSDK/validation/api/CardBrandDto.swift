@@ -1,3 +1,5 @@
+import Foundation
+
 struct CardBrandDto: Decodable {
     let name: String
     let pattern: String

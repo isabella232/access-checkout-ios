@@ -1,3 +1,5 @@
+import Foundation
+
 struct PaymentsCvcSessionRequest: Codable {
     enum Key: String, CodingKey {
         case cvc = "cvc"

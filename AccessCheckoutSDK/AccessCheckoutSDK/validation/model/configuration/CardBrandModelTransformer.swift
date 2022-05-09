@@ -1,3 +1,5 @@
+import Foundation
+
 class CardBrandModelTransformer {
     func transform(_ model: CardBrandModel) -> CardBrand {
         let images = model.images.map { self.transform(image: $0) }

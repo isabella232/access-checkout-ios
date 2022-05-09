@@ -1,3 +1,5 @@
+import Foundation
+
 protocol RetrieveSessionHandler {
     func canHandle(sessionType: SessionType) -> Bool
 

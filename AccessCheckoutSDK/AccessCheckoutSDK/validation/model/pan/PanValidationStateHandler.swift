@@ -1,3 +1,5 @@
+import Foundation
+
 protocol PanValidationStateHandler {
     func handlePanValidation(isValid: Bool, cardBrand: CardBrandModel?)
 

@@ -1,3 +1,5 @@
+import Foundation
+
 /**
  This struct is a representation of card information that can be constructed with a `CardDetailsBuilder`
  

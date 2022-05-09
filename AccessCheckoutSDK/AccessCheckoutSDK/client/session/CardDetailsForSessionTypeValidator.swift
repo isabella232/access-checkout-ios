@@ -1,3 +1,5 @@
+import Foundation
+
 class CardDetailsForSessionTypeValidator {
     func validate(cardDetails: CardDetails, for sessionType: SessionType) throws {
         switch sessionType {

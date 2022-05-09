@@ -1,3 +1,5 @@
+import Foundation
+
 struct VerifiedTokensSessionRequest: Codable {
     
     enum Key: String, CodingKey {

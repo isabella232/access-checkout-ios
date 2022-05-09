@@ -1,3 +1,5 @@
+import Foundation
+
 class VerifiedTokensRetrieveSessionHandler: RetrieveSessionHandler {
     private let apiClient: VerifiedTokensApiClient
 

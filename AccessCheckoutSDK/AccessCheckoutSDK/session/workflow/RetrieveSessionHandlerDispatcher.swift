@@ -1,3 +1,5 @@
+import Foundation
+
 class RetrieveSessionHandlerDispatcher {
     private let retrieveSessionHandlers: [RetrieveSessionHandler]
 

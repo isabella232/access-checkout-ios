@@ -1,3 +1,5 @@
+import Foundation
+
 /**
  This class is the entry point to the session generate for Access Worldpay Services.
 

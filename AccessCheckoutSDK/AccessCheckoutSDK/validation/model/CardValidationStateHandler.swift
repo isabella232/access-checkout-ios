@@ -1,3 +1,5 @@
+import Foundation
+
 class CardValidationStateHandler {
     private(set) var merchantDelegate: AccessCheckoutCardValidationDelegate
     private(set) var panIsValid = false

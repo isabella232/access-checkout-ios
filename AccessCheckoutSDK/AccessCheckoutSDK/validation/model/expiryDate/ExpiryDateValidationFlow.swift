@@ -1,3 +1,5 @@
+import Foundation
+
 class ExpiryDateValidationFlow {
     private var expiryDateValidator: ExpiryDateValidator
     private var expiryValidationStateHandler: ExpiryDateValidationStateHandler

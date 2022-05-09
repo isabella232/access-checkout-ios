@@ -1,3 +1,5 @@
+import Foundation
+
 /**
  A builder that returns an `AccessCheckoutClient` for the merchant to use for session generation
  

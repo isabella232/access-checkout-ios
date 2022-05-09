@@ -1,3 +1,5 @@
+import Foundation
+
 struct CardBrandModel {
     let name: String
     let images: [CardBrandImageModel]

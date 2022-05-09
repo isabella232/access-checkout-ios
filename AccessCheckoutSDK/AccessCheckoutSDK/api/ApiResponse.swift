@@ -1,3 +1,5 @@
+import Foundation
+
 struct ApiResponse: Decodable {
     let links: Links
     

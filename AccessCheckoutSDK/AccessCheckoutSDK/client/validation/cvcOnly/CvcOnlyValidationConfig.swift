@@ -1,3 +1,5 @@
+import Foundation
+
 /**
  An implementation of the [ValidationConfig] that represents the cvc validation configuration.
 

@@ -1,3 +1,5 @@
+import Foundation
+
 /**
  Protocol that should be adopted to be notified of Pan, Expiry Date, Cvc validation state changes as well as CardBrand changes as per detected by the SDK using the PAN entered by the user
  */

@@ -1,3 +1,5 @@
+import Foundation
+
 /*
 A struct representing the image of a card brand detected by the SDK
 - type: `String` containing the type of image available at the url

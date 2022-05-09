@@ -1,3 +1,5 @@
+import Foundation
+
 struct CardBrandsConfiguration {
     let allCardBrands: [CardBrandModel]
     let acceptedCardBrands: [String]

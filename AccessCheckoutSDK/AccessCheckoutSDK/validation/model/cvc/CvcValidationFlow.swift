@@ -1,3 +1,5 @@
+import Foundation
+
 class CvcValidationFlow {
     private let cvcValidator: CvcValidator
     private let cvcValidationStateHandler: CvcValidationStateHandler

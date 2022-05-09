@@ -1,3 +1,5 @@
+import Foundation
+
 class CvcValidator {
     func validate(cvc: String?, validationRule: ValidationRule) -> Bool {
         guard let cvc = cvc else {

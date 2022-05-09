@@ -1,3 +1,5 @@
+import Foundation
+
 /**
  An enum containing possible session types that can be requested
  */

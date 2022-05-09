@@ -1,3 +1,5 @@
+import Foundation
+
 /**
  Protocol that should be adopted to be notified of Cvc validation state changes
  */

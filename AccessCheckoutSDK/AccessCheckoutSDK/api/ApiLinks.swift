@@ -1,3 +1,5 @@
+import Foundation
+
 struct ApiLinks {
     static let verifiedTokens =  ApiLinks(service: "service:verifiedTokens", endpoint: "verifiedTokens:sessions", result: "verifiedTokens:session")
     static let sessions =  ApiLinks(service: "service:sessions", endpoint: "sessions:paymentsCvc", result: "sessions:session")

@@ -1,3 +1,5 @@
+import Foundation
+
 class PanValidator {
     private var cardBrandsConfigurationProvider: CardBrandsConfigurationProvider
     

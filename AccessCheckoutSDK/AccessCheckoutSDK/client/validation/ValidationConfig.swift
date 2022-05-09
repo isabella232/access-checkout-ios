@@ -1,3 +1,5 @@
+import Foundation
+
 /**
  Protocol used to allow polymorphism of the merchant's validation configuration
  */

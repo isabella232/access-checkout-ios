@@ -1,3 +1,5 @@
+import Foundation
+
 struct ValidationRulesDefaults {
     let pan: ValidationRule
     let cvc: ValidationRule

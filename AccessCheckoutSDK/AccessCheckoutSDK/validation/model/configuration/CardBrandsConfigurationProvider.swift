@@ -1,3 +1,5 @@
+import Foundation
+
 class CardBrandsConfigurationProvider {
     private let factory: CardBrandsConfigurationFactory
     private let serialQueue = DispatchQueue(label: "com.worldpay.access.checkout.CardBrandsConfigurationProvider")

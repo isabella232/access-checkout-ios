@@ -1,3 +1,5 @@
+import Foundation
+
 /**
  Represents a missing argument or incorrect argument that was passed by the merchant as part of the set up of the `generate session` or `validation` feature.
  */

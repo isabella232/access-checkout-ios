@@ -1,3 +1,5 @@
+import Foundation
+
 class PanFormatter {
     let cardSpacingEnabled: Bool
 

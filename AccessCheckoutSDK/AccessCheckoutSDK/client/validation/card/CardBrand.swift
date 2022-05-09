@@ -1,3 +1,5 @@
+import Foundation
+
 /*
  A struct representing a card brand as detected by the SDK
  - name: `String` containing the name of the card brand

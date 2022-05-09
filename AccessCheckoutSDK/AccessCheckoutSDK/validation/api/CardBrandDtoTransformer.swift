@@ -1,3 +1,5 @@
+import Foundation
+
 class CardBrandDtoTransformer {
     private let cvcMatcher = "^\\d*$"
     

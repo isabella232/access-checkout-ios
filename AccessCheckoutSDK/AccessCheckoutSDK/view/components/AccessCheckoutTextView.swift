@@ -1,3 +1,5 @@
+import Foundation
+
 /// A view representing a text field
 protocol AccessCheckoutTextView {
     /**

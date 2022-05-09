@@ -1,3 +1,5 @@
+import Foundation
+
 class CvcOnlyValidationStateHandler {
     private(set) var merchantDelegate: AccessCheckoutCvcOnlyValidationDelegate
     private(set) var cvcIsValid = false

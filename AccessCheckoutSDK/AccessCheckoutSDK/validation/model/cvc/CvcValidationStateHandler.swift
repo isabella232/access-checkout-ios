@@ -1,3 +1,5 @@
+import Foundation
+
 protocol CvcValidationStateHandler {
     func handleCvcValidation(isValid: Bool)
     

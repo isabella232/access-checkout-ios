@@ -1,3 +1,5 @@
+import Foundation
+
 class PaymentsCvcRetrieveSessionHandler: RetrieveSessionHandler {
     private let apiClient: SessionsApiClient
 

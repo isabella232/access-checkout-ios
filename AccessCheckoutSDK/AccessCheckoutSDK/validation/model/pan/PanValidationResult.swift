@@ -1,3 +1,5 @@
+import Foundation
+
 class PanValidationResult {
     let isValid: Bool
     let cardBrand: CardBrandModel?

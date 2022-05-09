@@ -1,3 +1,5 @@
+import Foundation
+
 struct UserAgent {
     static let sdkVersion = "2.3.1"
     static private let valueFormat = "access-checkout-ios/%@"
