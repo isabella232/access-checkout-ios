@@ -1,5 +1,5 @@
 import Foundation
-import Mockingjay
+//import Mockingjay
 
 protocol ServiceStub {
     func start()
@@ -18,7 +18,7 @@ class DiscoveryStub : ServiceStub {
                 return
         }
             
-        MockingjayProtocol.addStub(matcher: http(.get, uri: self.baseUri), builder: jsonData(data))
+//        MockingjayProtocol.addStub(matcher: http(.get, uri: self.baseUri), builder: jsonData(data))
     }
 }
 
@@ -35,7 +35,7 @@ class VerifiedTokensStub : ServiceStub {
                 return
         }
             
-        MockingjayProtocol.addStub(matcher: http(.get, uri: "\(self.baseUri)/verifiedTokens"), builder: jsonData(data))
+//        MockingjayProtocol.addStub(matcher: http(.get, uri: "\(self.baseUri)/verifiedTokens"), builder: jsonData(data))
     }
 }
 
@@ -52,32 +52,32 @@ class VerifiedTokensSessionStub : ServiceStub {
                 return
         }
             
-        MockingjayProtocol.addStub(matcher: checkBody(.post, "\(self.baseUri)/verifiedTokens/sessions"), builder: jsonData(data))
+//        MockingjayProtocol.addStub(matcher: checkBody(.post, "\(self.baseUri)/verifiedTokens/sessions"), builder: jsonData(data))
     }
     
-    func checkBody(_ method: HTTPMethod, _ uri: String) -> (_ request: URLRequest) -> Bool {
-        return { (request:URLRequest) in
-            let body = request.httpBodyStream?.readfully() ?? Data()
-            let parsedJson = try? JSONSerialization.jsonObject(with: body)
-            guard let jsonDict = parsedJson as? Dictionary<String, AnyObject> else { return false }
-
-            guard let pan = jsonDict["cardNumber"] as? String else { return false }
-            
-            let range = NSRange(location: 0, length: pan.utf16.count)
-            let regex = try! NSRegularExpression(pattern: "^[0-9]+$")
-            if(regex.firstMatch(in: pan, options: [], range: range) == nil) {
-                return false
-            }
-            
-            if let requestMethod = request.httpMethod {
-              if requestMethod == method.description {
-                return Mockingjay.uri(uri)(request)
-              }
-            }
-            
-            return false
-        }
-    }
+//    func checkBody(_ method: HTTPMethod, _ uri: String) -> (_ request: URLRequest) -> Bool {
+//        return { (request:URLRequest) in
+//            let body = request.httpBodyStream?.readfully() ?? Data()
+//            let parsedJson = try? JSONSerialization.jsonObject(with: body)
+//            guard let jsonDict = parsedJson as? Dictionary<String, AnyObject> else { return false }
+//
+//            guard let pan = jsonDict["cardNumber"] as? String else { return false }
+//
+//            let range = NSRange(location: 0, length: pan.utf16.count)
+//            let regex = try! NSRegularExpression(pattern: "^[0-9]+$")
+//            if(regex.firstMatch(in: pan, options: [], range: range) == nil) {
+//                return false
+//            }
+//
+//            if let requestMethod = request.httpMethod {
+//              if requestMethod == method.description {
+//                return Mockingjay.uri(uri)(request)
+//              }
+//            }
+//
+//            return false
+//        }
+//    }
 }
 
 class CardConfigurationStub : ServiceStub {
@@ -95,7 +95,7 @@ class CardConfigurationStub : ServiceStub {
                 return
         }
             
-        MockingjayProtocol.addStub(matcher: http(.get, uri: self.cardConfigurationUri), builder: jsonData(data))
+//        MockingjayProtocol.addStub(matcher: http(.get, uri: self.cardConfigurationUri), builder: jsonData(data))
     }
 }
 
@@ -112,7 +112,7 @@ class SessionsStub : ServiceStub {
                 return
         }
             
-        MockingjayProtocol.addStub(matcher: http(.get, uri: "\(self.baseUri)/sessions"), builder: jsonData(data))
+//        MockingjayProtocol.addStub(matcher: http(.get, uri: "\(self.baseUri)/sessions"), builder: jsonData(data))
     }
 }
 
@@ -129,7 +129,7 @@ class SessionsPaymentsCvcStub : ServiceStub {
                 return
         }
             
-        MockingjayProtocol.addStub(matcher: http(.post, uri: "\(self.baseUri)/sessions/payments/cvc"), builder: jsonData(data))
+//        MockingjayProtocol.addStub(matcher: http(.post, uri: "\(self.baseUri)/sessions/payments/cvc"), builder: jsonData(data))
     }
 }
 

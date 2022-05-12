@@ -1,5 +1,5 @@
 import AccessCheckoutSDK
-import Mockingjay
+//import Mockingjay
 import UIKit
 
 @UIApplicationMain
