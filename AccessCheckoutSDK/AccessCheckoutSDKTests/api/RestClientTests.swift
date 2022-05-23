@@ -91,7 +91,7 @@ class RestClientTests: XCTestCase {
     func testRestClientProvidesGenericErrorToPromiseWhenFailingToGetAResponse() {
         let expectationToWaitFor = XCTestExpectation(description: "")
         let expectedError = StubUtils.createError(errorName: "unexpectedApiError", message: "Could not connect to the server.")
-        let request = createRequest(url: "http://localhost/somewhere", method: "GET")
+        let request = createRequest(url: "http://some-domain-that-does-not-exist/somewhere", method: "GET")
         
         restClient.send(urlSession: urlSession, request: request, responseType: DummyResponse.self) { result in
             switch result {
