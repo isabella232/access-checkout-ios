@@ -90,15 +90,18 @@ class RestClientTests: XCTestCase {
     
     func testRestClientProvidesGenericErrorToPromiseWhenFailingToGetAResponse() {
         let expectationToWaitFor = XCTestExpectation(description: "")
-        let expectedError = StubUtils.createError(errorName: "unexpectedApiError", message: "Could not connect to the server.")
-        let request = createRequest(url: "http://some-domain-that-does-not-exist/somewhere", method: "GET")
+        let request = createRequest(url: "http://localhost/somewhere", method: "GET")
+        // On BitRise, the message returned when attempting to connect to an unknown host may occasionally be different
+        // Hence why we need to assert on different error messages
+        let expectedError1 = StubUtils.createError(errorName: "unexpectedApiError", message: "Could not connect to the server.")
+        let expectedError2 = StubUtils.createError(errorName: "unexpectedApiError", message: "A server with the specified hostname could not be found.")
         
         restClient.send(urlSession: urlSession, request: request, responseType: DummyResponse.self) { result in
             switch result {
                 case .success:
                     XCTFail("Expected failed response but received successful response")
                 case .failure(let error):
-                    XCTAssertEqual(expectedError, error)
+                    XCTAssert(error == expectedError1 || error == expectedError2)
             }
             expectationToWaitFor.fulfill()
         }
